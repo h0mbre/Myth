@@ -5,7 +5,7 @@
 
 void ascii () {
 
-	std::random_device rd; 
+    std::random_device rd; 
     std::mt19937 eng(rd()); 
     std::uniform_int_distribution<> distr(1, 3); 
     int choice;
