@@ -5,7 +5,7 @@
 
 void ascii () {
 
-    std::random_device rd; 
+	std::random_device rd; 
     std::mt19937 eng(rd()); 
     std::uniform_int_distribution<> distr(1, 3); 
     int choice;
@@ -188,7 +188,7 @@ int main () {
 
 		if (firstByte == "ff" or secondByte == "ff" or thirdByte == "ff" or fourthByte == "ff" or firstByte == "FF" or secondByte == "FF" or thirdByte == "FF" or fourthByte == "FF") {
 
-			if (firstByte == "01" or secondByte == "01" or thirdByte == "01" or fourthByte == "01" or firstByte == "02" or secondByte == "02" or thirdByte == "02" or fourthByte == "02") {
+			if (firstByte == "00" or secondByte == "00" or thirdByte == "00" or fourthByte == "00" or firstByte == "01" or secondByte == "01" or thirdByte == "01" or fourthByte == "01" or firstByte == "02" or secondByte == "02" or thirdByte == "02" or fourthByte == "02") {
 
 				
 				//starting arithmetic on the first byte
@@ -491,7 +491,7 @@ int main () {
 
 		}
 
-		else if (firstByte == "01" or secondByte == "01" or thirdByte == "01" or fourthByte == "01") {
+		else if (firstByte == "00" or secondByte == "00" or thirdByte == "00" or fourthByte == "00" or firstByte == "01" or secondByte == "01" or thirdByte == "01" or fourthByte == "01") {
 
 			//starting arithmetic on the first byte
 			int firstHex = std::stoi (firstByte,nullptr,16);
