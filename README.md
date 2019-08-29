@@ -12,5 +12,5 @@ Myth accepts shellcode input in the following formats: `545b81ebb90d0000ffd3` or
 
 ## Example
 
-![](h0mbre/Myth/myth.gif)
+![](/myth.gif)
 
