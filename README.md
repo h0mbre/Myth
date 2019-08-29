@@ -12,3 +12,5 @@ Myth accepts shellcode input in the following formats: `545b81ebb90d0000ffd3` or
 
 ## Example
 
+![](/assets/images/CTP/myth.gif)
+
