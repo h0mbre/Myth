@@ -154,7 +154,7 @@ int main () {
 		firstByte.append(firstByte1);
 		firstByte.append(firstByte2);
 
-		//std::cout << "The first byte of the shellcode is: " << firstByte << "\n";
+		std::cout << "The first byte of the shellcode is: " << firstByte << "\n";
 
 		std::string secondByte;
 		std::string secondByte1;
@@ -164,7 +164,7 @@ int main () {
 		secondByte.append(secondByte1);
 		secondByte.append(secondByte2);
 
-		//std::cout << "The second byte of the shellcode is: " << secondByte << "\n";
+		std::cout << "The second byte of the shellcode is: " << secondByte << "\n";
 
 		std::string thirdByte;
 		std::string thirdByte1;
@@ -174,7 +174,7 @@ int main () {
 		thirdByte.append(thirdByte1);
 		thirdByte.append(thirdByte2);
 
-		//std::cout << "The third byte of the shellcode is: " << thirdByte << "\n";
+		std::cout << "The third byte of the shellcode is: " << thirdByte << "\n";
 
 		std::string fourthByte;
 		std::string fourthByte1;
@@ -184,7 +184,7 @@ int main () {
 		fourthByte.append(fourthByte1);
 		fourthByte.append(fourthByte2);
 
-		//std::cout << "The fourth byte of the shellcode is: " << fourthByte << "\n";
+		std::cout << "The fourth byte of the shellcode is: " << fourthByte << "\n";
 
 		if (firstByte == "ff" or secondByte == "ff" or thirdByte == "ff" or fourthByte == "ff" or firstByte == "FF" or secondByte == "FF" or thirdByte == "FF" or fourthByte == "FF") {
 
@@ -446,8 +446,8 @@ int main () {
 				//starting arithmetic on the second byte
 				int fourthHex = std::stoi (fourthByte,nullptr,16);
 				int fourthOperator1, fourthOperator2, fourthOperator3;
-				fourthOperator1 = thirdHex/3;
-				fourthOperator2 = thirdHex/3;
+				fourthOperator1 = fourthHex/3;
+				fourthOperator2 = fourthHex/3;
 				fourthOperator3 = (fourthHex - fourthOperator1 - fourthOperator2);
 
 				//converting the decimal ints back into hex strings
@@ -476,7 +476,7 @@ int main () {
 
 				}
 				
-				//std::cout << "FF found by itself.\n";
+				std::cout << "FF found by itself.\n";
 				std::cout << varName << " += \"\\x25\\x4a\\x4d\\x4e\\x55\"\n";
 				std::cout << varName << " += \"\\x25\\x35\\x32\\x31\\x2a\"\n";
 				std::cout << varName << " += \"\\x05\\x" << convertedFour1 << "\\x" << convertedThree1 << "\\x" << convertedTwo1 << "\\x" << convertedOne1 << "\"\n";
@@ -629,7 +629,7 @@ int main () {
 
 			}
 
-			//std::cout << "01 was found.\n";
+			std::cout << "01 was found.\n";
 			std::cout << varName << " += \"\\x25\\x4a\\x4d\\x4e\\x55\"\n";
 			std::cout << varName << " += \"\\x25\\x35\\x32\\x31\\x2a\"\n";
 			std::cout << varName << " += \"\\x05\\x" << convertedFour1 << "\\x" << convertedThree1 << "\\x" << convertedTwo1 << "\\x" << convertedOne1 << "\"\n";
@@ -643,7 +643,7 @@ int main () {
 
 		else {
 
-			//std::cout << "ff was not found.\n";
+			std::cout << "ff was not found.\n";
 
 			//starting arithmetic on the first byte
 			int firstHex = std::stoi (firstByte,nullptr,16);
