@@ -629,7 +629,7 @@ int main () {
 
 			}
 
-			std::cout << "01 was found.\n";
+			//std::cout << "01 was found.\n";
 			std::cout << varName << " += \"\\x25\\x4a\\x4d\\x4e\\x55\"\n";
 			std::cout << varName << " += \"\\x25\\x35\\x32\\x31\\x2a\"\n";
 			std::cout << varName << " += \"\\x05\\x" << convertedFour1 << "\\x" << convertedThree1 << "\\x" << convertedTwo1 << "\\x" << convertedOne1 << "\"\n";
@@ -643,7 +643,7 @@ int main () {
 
 		else {
 
-			std::cout << "ff was not found.\n";
+			//std::cout << "ff was not found.\n";
 
 			//starting arithmetic on the first byte
 			int firstHex = std::stoi (firstByte,nullptr,16);
