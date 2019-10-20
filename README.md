@@ -2,7 +2,7 @@
 
 ## Background
 
-Myth is an ADD/SUB encoder for generating alphanumeric shellcode. It takes user-supplied shellcode and outputs the assembly instructions, in a Python-friendly format, necessary to push that shellcode onto the stack by iteratively manipulating the EAX register. This tool was based upon [Slink](https://github.com/ihack4falafel/Slink) by @ihack4falafel. They are similar looking in the terminal, but I believe the encoding arithmetic is significantly different. Hashim's tool is also much more robust with respect to mitigating potential bad characters. 
+Myth is an ADD/SUB encoder for generating alphanumeric shellcode. It takes user-supplied shellcode and outputs the assembly instructions, in a Python-friendly format, necessary to push that shellcode onto the stack by iteratively manipulating the EAX register.
 
 This was mainly an excercise in exploring C++ and trying to make something useful at the same time. Hopefully some CTP/OSCE students get some use out of the tool. 
 
